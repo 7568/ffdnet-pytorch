@@ -1,6 +1,6 @@
-本代码绝大部分来自于 [**An Analysis and Implementation of the FFDNet Image Denoising Method**](http://www.ipol.im/pub/art/2019/231/) ，只是不知道为何其中计算损失的时候使是将输出于噪声进行计算，所以该代码其实训练的是生成噪声，然后用带噪声的图像减去噪声，从而得到干净的图像，但是 [FFDNet](https://arxiv.org/pdf/1710.04026.pdf) 原文不是这样子的，所以我就做了一点点修改。
+本代码绝大部分来自于 [**An Analysis and Implementation of the FFDNet Image Denoising Method**](http://www.ipol.im/pub/art/2019/231/) ，只是不知道为何其中计算损失的时候使是将输出与噪声进行计算，所以该代码其实训练的是生成噪声，然后用带噪声的图像减去噪声，从而得到干净的图像，但是 [FFDNet](https://arxiv.org/pdf/1710.04026.pdf) 原文不是这样子的，所以我就做了一点点修改。
 
- [FFDNet](https://arxiv.org/pdf/1710.04026.pdf) 和代码使用的基本我在 [这里](https://7568.github.io/2021/11/07/FFDNet.html) 有个基本的介绍，不足的地方，要是有人看到了，请提交issue。
+ [FFDNet](https://arxiv.org/pdf/1710.04026.pdf) 的基本介绍和代码的基本使用我在 [这里](https://7568.github.io/2021/11/07/FFDNet.html) 有个简单的介绍，不足的地方，要是有人看到了，请提交issue。
 
 % A PyTorch implementation of FFDNet image denoising.
 
